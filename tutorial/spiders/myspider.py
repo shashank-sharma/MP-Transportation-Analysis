@@ -1,7 +1,7 @@
 import scrapy
-from scrapy.utils.response import open_in_browser
 
-aa = 0
+aa = 5001
+xx = []
 
 class LoginSpider(scrapy.Spider):
     name = 'myspider'
@@ -9,7 +9,8 @@ class LoginSpider(scrapy.Spider):
 
     def parse(self, response):
         global aa
-        if aa >= 1001:
+        if aa >= 6001:
+            print(xx)
             return()
         bb = ('%.4d' % aa)
         return scrapy.FormRequest.from_response(
@@ -21,6 +22,8 @@ class LoginSpider(scrapy.Spider):
 
     def get_details(self, response):
         global aa
+        global xx
+        xx.append(aa)
         aa+=1
         bb = ('%.4d' % int(aa-1))
         a = response.css('table.Grid tr')[1:-1]

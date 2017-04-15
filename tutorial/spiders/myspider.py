@@ -1,6 +1,7 @@
 import scrapy
 
-aa = 5001
+# This is the range which needs to be set by user
+aa = 0
 xx = []
 
 class LoginSpider(scrapy.Spider):
@@ -9,7 +10,9 @@ class LoginSpider(scrapy.Spider):
 
     def parse(self, response):
         global aa
-        if aa >= 6001:
+
+        # This is the max value of range
+        if aa >= 1001:
             print(xx)
             return()
         bb = ('%.4d' % aa)
@@ -23,6 +26,7 @@ class LoginSpider(scrapy.Spider):
     def get_details(self, response):
         global aa
         global xx
+        print(aa)
         xx.append(aa)
         aa+=1
         bb = ('%.4d' % int(aa-1))

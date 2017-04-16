@@ -2,6 +2,8 @@
 
 ## Introduction
 
+This project is used to scrape and gather data related MP Transportation. Everything was handled with the help of python programming language. For graph, data and content visit link.
+
 ### AIM
 
 Our aim is to gather as much data as possible from a given website and use it to analyze and then compare it.

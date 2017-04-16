@@ -1,4 +1,4 @@
-# [MP-Transportation-Analysis](http://shashanksharma98.blogspot.in/2017/04/mp-transportation-analysis-through.html)
+# [MP-Transportation-Analysis](http://shashank-py.blogspot.in/2017/04/indias-mp-transportation-analysis.html)
 
 ## Introduction
 
@@ -42,4 +42,4 @@ For free version you might need to set some range from 0 - 1001 because max time
 
 ### Data analysis
 
-To load up data we used the JSON format rather than .db or .sql because converting JSON to these format may take 20+ days continuous operation which is not possible to handle by the system so we used Python to load JSON files and then later we did our maths to calculate our result.
+To load up data we used the JSON format rather than .db or .sql because converting JSON to these format may take 20+ days continuous operation which is not possible to handle by the system so we used Python and then used ijson value to iterate over JSON values and then counted it.

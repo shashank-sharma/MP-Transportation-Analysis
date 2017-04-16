@@ -1,4 +1,4 @@
-# MP-Transportation-Analysis
+# [MP-Transportation-Analysis](http://shashanksharma98.blogspot.in/2017/04/mp-transportation-analysis-through.html)
 
 ## Introduction
 
@@ -19,6 +19,8 @@ Python version | Python 2.7.6
 
 Tools used was Scrapy. Whole program was successful because of scrapy project. We used this to create one spider and then deployed it on scrapinghub.com
 Reason is pretty obvious because we are dealing with 10 millions of data. With single laptop it will take approx 1 month 5 days so to fasten this process we used scrapinghub.com 4 units and then scraped data.
+
+Also to read data ijson module was used which iterates over JSON data. We used this because loading JSON data in python program takes so much of memory.
 
 ### How to use?
 

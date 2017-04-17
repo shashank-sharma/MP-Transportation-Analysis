@@ -1,21 +1,22 @@
 import scrapy
 
-# This is the range which needs to be set by user
-aa = 0
-xx = []
-
 class LoginSpider(scrapy.Spider):
+    
+    # This is the range which needs to be set by user
+    # aa = range
+
+    aa = 0
+    xx = []
     name = 'myspider'
     start_urls = ['http://mis.mptransport.org/MPLogin/eSewa/VehicleSearch.aspx']
 
     def parse(self, response):
-        global aa
 
         # This is the max value of range
-        if aa >= 1001:
-            print(xx)
+        if self.aa >= 1001:
+            print(self.xx)
             return()
-        bb = ('%.4d' % aa)
+        bb = ('%.4d' % self.aa)
         return scrapy.FormRequest.from_response(
             response,
             formdata={"ctl00$ContentPlaceHolder1$txtRegNo": bb, "ctl00$ContentPlaceHolder1$RadioButtonList1": "END"},
@@ -24,12 +25,10 @@ class LoginSpider(scrapy.Spider):
         )
 
     def get_details(self, response):
-        global aa
-        global xx
-        print(aa)
-        xx.append(aa)
-        aa+=1
-        bb = ('%.4d' % int(aa-1))
+        print(self.aa)
+        self.xx.append(self.aa) # To show all the data which are scraped
+        self.aa+=1
+        bb = ('%.4d' % int(self.aa-1))
         a = response.css('table.Grid tr')[1:-1]
         if len(a) == 0:
             yield scrapy.Request(

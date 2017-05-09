@@ -19,17 +19,19 @@ Since the data related MP transportation was public so we used the given URL and
 
 Python version | Python 2.7.6
 
-Scrapy
+#### Scrapy
+
 Whole program was successful because of scrapy project. We used this to create one spide.
 
-Scrapinghub
+#### Scrapinghub
+
 Spider was later deployed to scrapinghub to start our spider on server and start scraping it.
 Reason is pretty obvious because we are dealing with 10 millions of data. With single laptop it will take approx 1 month 5 days so to fasten this process we used scrapinghub.com 4 units and then scraped data.
 
-Plotly
+#### Plotly
 All the graph was plotted with help of plotly. I used plotly module to create few offline graphs and then later made them public through online tools.
 
-Python module - ijson
+#### Python module - ijson
 Also to read data ijson module was used which iterates over JSON data. We used this because loading JSON data in python program takes so much of memory.
 
 ### How to use?

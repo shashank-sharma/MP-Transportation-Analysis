@@ -21,7 +21,7 @@ Python version | Python 2.7.6
 
 #### Scrapy
 
-Whole program was successful because of scrapy project. We used this to create one spide.
+Whole program was successful because of scrapy project. We used this to create one spider.
 
 #### Scrapinghub
 

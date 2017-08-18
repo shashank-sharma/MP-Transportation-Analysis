@@ -2,12 +2,12 @@
 
 ## Introduction
 
-This project is used to scrape and gather data related MP Transportation. Everything was handled with the help of python programming language. For graph, data and content visit link.
+This project is used to scrape and gather data related MP Transportation. Everything was handled with the help of python programming language. For graph, data and content visit [link](http://shashank-py.blogspot.in/2017/04/indias-mp-transportation-analysis.html).
 
 ### AIM
 
 Our aim is to gather as much data as possible from a given website and use it to analyze and then compare it.
-For data we used this 'http://mis.mptransport.org/MPLogin/eSewa/VehicleSearch.aspx' site to scrape it.
+For data we used this http://mis.mptransport.org/MPLogin/eSewa/VehicleSearch.aspx site to scrape it.
 
 NOTE: It's not recommended to scrape this site all of sudden. It was used to test my knowledge and also to gain data.
 
